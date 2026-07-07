@@ -84,7 +84,7 @@ then
     mysql -h $MYSQL_HOST -uroot -pRoboShop@1 < /app/schema/shipping.sql &>> $LOGFILE
     VALIDATE $? "Loading schema"
 else
-    echo -e "Schema already exists... $Y SKIPPING $N"
+    echo -e "Schema already exists....... $Y SKIPPING $N"
 fi
 
 systemctl restart shipping
